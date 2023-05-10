@@ -11,9 +11,10 @@ using UnityEngine.UI;
 
 public class MainCreat : MonoBehaviour
 {
+    public static MainCreat Instance;
+
     public Text txt;
     public Text debug;
-    public GroupArray[] normalGroups;
     public SpecialGroupArray specialGroup;
     public InputField inputSpecial;
     public Image currenImage;
@@ -25,6 +26,7 @@ public class MainCreat : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         ImageSavePath = Application.dataPath + "/Resources/Bg.jpg";
     }
 
@@ -35,12 +37,7 @@ public class MainCreat : MonoBehaviour
 
     public void CreatData()
     {
-        data.Clear();
-        txt.text = "生成数据中...";
-        for (int i = 0; i < normalGroups.Length; i++)
-        {
-            data.AddRange(normalGroups[i].CreatArray());
-        }
+        data = RollPanel.Instance.CreatData();
         if (data.Count <= 0)//特殊滚轴
         {
             int special = 0;
@@ -71,10 +68,7 @@ public class MainCreat : MonoBehaviour
 
     public void ResetData()
     {
-        for (int i = 0; i < normalGroups.Length; i++)
-        {
-            normalGroups[i].ResetData();
-        }
+        RollPanel.Instance.ResetData();
         specialGroup.ResetData();
     }
 
@@ -144,6 +138,11 @@ public class MainCreat : MonoBehaviour
         }
         File.WriteAllBytes(ImageSavePath, dataBytes);
         PlayerPrefs.SetInt("IsSetBg",1);
+    }
+
+    public void OnOpenRollPanelButton()
+    {
+        RollPanel.Instance.ShowRollPanel(true);
     }
 
     private void LoadTexture()

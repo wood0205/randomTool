@@ -5,6 +5,13 @@ using UnityEngine;
 
 public class SpecialGroupArray : GroupArray
 {
+
+    private void Start()
+    {
+        InitName(-1);
+        ResetData();
+    }
+
     public List<int> CreatArray(int special)
     {
         var array = base.CreatArray();
