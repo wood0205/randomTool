@@ -8244,3 +8244,10 @@
 仓工具/Library/ArtifactDB
 仓工具/Library/APIUpdater/project-dependencies.graph
 仓工具/Library/AnnotationManager
+仓工具/Logs/ApiUpdaterCheck.txt
+仓工具/Logs/AssetImportWorker0-prev.log
+仓工具/Logs/shadercompiler-UnityShaderCompiler.exe0.log
+仓工具/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache
+仓工具/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+仓工具/Temp/UnityLockfile
+仓工具/Temp/workerlic

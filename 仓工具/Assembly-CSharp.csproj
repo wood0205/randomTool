@@ -57,20 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\GroupArray.cs" />
+    <Compile Include="Assets\Script\RollPanel.cs" />
+    <Compile Include="Assets\Core\GameObjectPool.cs" />
+    <Compile Include="Assets\Script\NoDrawingRayCast.cs" />
+    <Compile Include="Assets\Core\UtilTool.cs" />
     <Compile Include="Assets\Script\SpecialGroupArray.cs" />
     <Compile Include="Assets\Script\MainCreat.cs" />
     <Compile Include="Assets\Script\OpenFileName.cs" />
-    <Compile Include="Assets\Script\RollPanel.cs" />
-    <Compile Include="Assets\Script\ScrollRect\LoopVerticalScrollRect.cs" />
-    <Compile Include="Assets\Script\ScrollRect\LoopScrollPrefabSource.cs" />
-    <Compile Include="Assets\Script\ScrollRect\LoopHorizontalScrollRect.cs" />
-    <Compile Include="Assets\Script\ScrollRect\LoopScrollRect.cs" />
-    <Compile Include="Assets\Core\GameObjectPool.cs" />
-    <Compile Include="Assets\Core\UtilTool.cs" />
     <Compile Include="Assets\Core\TObjectPool.cs" />
-    <Compile Include="Assets\Script\ScrollRect\SGMenuOptions.cs" />
-    <Compile Include="Assets\Script\ScrollRect\SGDefaultControls.cs" />
-    <Compile Include="Assets\Script\ScrollRect\NoDrawingRayCast.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
