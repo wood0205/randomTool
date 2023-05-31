@@ -239,6 +239,10 @@ public class GroupArray : MonoBehaviour
                 inputNone.text = sb.ToString();
             }
         }
+        else
+        {
+            notNeed.Clear();
+        }
     }
 
     private void IpSpecify1Over(string str)
@@ -294,6 +298,7 @@ public class GroupArray : MonoBehaviour
     {
         ResetText();
         isInputMin = isInputMax = isInputNum = isInputNone = isInputSpecify1 = isInputSpecify2 = isInputInterval1 = isInputInterval2 = false;
+        notNeed.Clear();
     }
 
 }
